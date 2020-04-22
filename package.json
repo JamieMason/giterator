@@ -11,7 +11,7 @@
   "dependencies": {
     "bluebird": "3.5.0",
     "chalk": "2.1.0",
-    "commander": "2.11.0",
+    "commander": "2.20.0",
     "execa": "0.8.0",
     "logservable": "1.0.0",
     "nodent-runtime": "3.0.4",
