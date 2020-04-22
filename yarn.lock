@@ -2685,12 +2685,12 @@ log-symbols@^2.0.0:
   dependencies:
     chalk "^2.0.1"
 
-logservable@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/logservable/-/logservable-1.0.0.tgz#ee0219620fd2a30f8a31066c2cf0027afdd8e6a1"
-  integrity sha512-Bf09rBKiSWn11/FL+Uh10bO+HkI+GsMEcbZVcxhfnoy8YHbQILXkiGsu8do5FyFD5tACJUbb3SXAgHtQwb+zfA==
+logservable@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/logservable/-/logservable-1.3.0.tgz#6d7e2cdb80d964650fa2fa3dd0287dda4398382a"
+  integrity sha512-/ZM4f4fButerlV9BYzEVbOVL1L71Xkv4xvtPfrkSDBlAIr90qb/uuWmfY6lUMQ5lg9ZNfRYiZRifWOF31kuRKg==
   dependencies:
-    xstream "10.9.0"
+    rxjs "6.1.0"
 
 loose-envify@^1.0.0:
   version "1.4.0"
@@ -3691,6 +3691,13 @@ run-async@^2.2.0:
   integrity sha1-A3GrSuC91yDUFm19/aZP96RFpsA=
   dependencies:
     is-promise "^2.1.0"
+
+rxjs@6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.1.0.tgz#833447de4e4f6427b9cec3e5eb9f56415cd28315"
+  integrity sha512-lMZdl6xbHJCSb5lmnb6nOhsoBVCyoDC5LDJQK9WWyq+tsI7KnlDIZ0r0AZAlBpRPLbwQA9kzSBAZwNIZEZ+hcw==
+  dependencies:
+    tslib "^1.9.0"
 
 rxjs@^6.4.0:
   version "6.5.2"
