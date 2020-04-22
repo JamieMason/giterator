@@ -2982,12 +2982,7 @@ nodent-compiler@>=3.1.0:
     nodent-transform "^3.2.9"
     source-map "^0.5.7"
 
-nodent-runtime@3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/nodent-runtime/-/nodent-runtime-3.0.4.tgz#a801ecb7bb0f6c39a69b24cc2fa370cfa8b492da"
-  integrity sha1-qAHst7sPbDmmmyTML6Nwz6i0kto=
-
-nodent-runtime@>=3.0.4:
+nodent-runtime@3.2.1, nodent-runtime@>=3.0.4:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/nodent-runtime/-/nodent-runtime-3.2.1.tgz#9e2755d85e39f764288f0d4752ebcfe3e541e00e"
   integrity sha512-7Ws63oC+215smeKJQCxzrK21VFVlCFBkwl0MOObt0HOpVQXs3u483sAmtkF33nNqZ5rSOQjB76fgyPBmAUrtCA==
