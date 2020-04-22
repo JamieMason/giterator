@@ -4008,7 +4008,7 @@ supports-hyperlinks@^1.0.1:
     has-flag "^2.0.0"
     supports-color "^5.0.0"
 
-symbol-observable@^1.0.2:
+symbol-observable@1.2.0, symbol-observable@^1.0.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
   integrity sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==
@@ -4358,6 +4358,13 @@ xstream@10.9.0:
   integrity sha1-23k0zsLaATYNQ6u7yHm4RSQ5e1U=
   dependencies:
     symbol-observable "^1.0.2"
+
+xstream@11.11.0:
+  version "11.11.0"
+  resolved "https://registry.yarnpkg.com/xstream/-/xstream-11.11.0.tgz#2c963cf0a6cb3eafecb57eaeae16c9850235b422"
+  integrity sha512-0zF3PLsHrmbToPBgX1jYZFNw+t5octSFJgVRH44HGlGBBjY7gscvDQOZvty8IQV15Snia1RcLPECWDfEaE4aXg==
+  dependencies:
+    symbol-observable "1.2.0"
 
 yallist@^2.1.2:
   version "2.1.2"

@@ -17,7 +17,7 @@
     "nodent-runtime": "3.0.4",
     "rimraf": "2.6.1",
     "tar": "4.0.1",
-    "xstream": "10.9.0"
+    "xstream": "11.11.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
