@@ -16,7 +16,7 @@
     "logservable": "1.0.0",
     "nodent-runtime": "3.0.4",
     "rimraf": "2.6.1",
-    "tar": "4.0.1",
+    "tar": "4.4.2",
     "xstream": "10.9.0"
   },
   "devDependencies": {
