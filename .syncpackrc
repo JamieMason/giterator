@@ -1,0 +1,13 @@
+{
+  "versionGroups": [
+    {
+      "dependencies": [
+        "@types/node"
+      ],
+      "packages": [
+        "**"
+      ],
+      "pinVersion": "14.18.36"
+    }
+  ]
+}
