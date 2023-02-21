@@ -16,7 +16,7 @@ import { giterator } from 'giterator';
 for await (const commit of giterator('/Users/foldleft/Dev/syncpack', {
   pageSize: 20,
   skipMerges: true,
-  tokenNames: ['authorEmail', 'subject', 'refNames'],
+  tokenNames: ['authorName', 'subject', 'refNames'],
 })) {
   console.log(commit);
 }
