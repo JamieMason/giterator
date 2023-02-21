@@ -1,7 +1,7 @@
 {
   "name": "giterator",
   "description": "git log as a JavaScript generator",
-  "version": "0.0.0",
+  "version": "0.6.0",
   "author": "Jamie Mason <jamie@foldleft.io> (https://github.com/JamieMason)",
   "bugs": "https://github.com/JamieMason/giterator/issues",
   "dependencies": {
