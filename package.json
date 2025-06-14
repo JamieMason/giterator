@@ -40,8 +40,8 @@
   "repository": "JamieMason/giterator",
   "scripts": {
     "build": "rm -rf ./dist && tsc --project .",
-    "format": "yarn format:lint && yarn format:source",
-    "format:lint": "yarn lint --fix",
+    "format": "pnpm run format:lint && pnpm run format:source",
+    "format:lint": "pnpm run lint --fix",
     "format:source": "prettier --write .",
     "lint": "eslint --ext .ts .",
     "prepack": "yarn build",
