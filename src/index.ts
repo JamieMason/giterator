@@ -1,6 +1,6 @@
-import { getConfig } from './lib/get-config';
-import { getNextCommits } from './lib/get-next-commits';
-import type { tokensByName } from './lib/tokens-by-name';
+import { getConfig } from './lib/get-config.js';
+import { getNextCommits } from './lib/get-next-commits/index.js';
+import type { tokensByName } from './lib/tokens-by-name.js';
 
 export namespace Giterator {
   /**

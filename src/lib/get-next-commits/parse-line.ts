@@ -1,4 +1,4 @@
-import type { Giterator } from '../..';
+import type { Giterator } from '../../index.js';
 
 export function parseLine(tokenName: Giterator.TokenName, line: string) {
   const openTag = `<${tokenName}>`;

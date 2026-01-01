@@ -1,9 +1,10 @@
-import { isBoolean } from 'expect-more/dist/is-boolean';
-import { isNumber } from 'expect-more/dist/is-number';
-import type { Giterator } from '..';
-import { tokensByName } from './tokens-by-name';
+import { isBoolean, isNumber } from 'expect-more';
+import type { Giterator } from '../index.js';
+import { tokensByName } from './tokens-by-name.js';
 
-export function getConfig(options: Partial<Giterator.Options>) {
+export function getConfig(
+  options: Partial<Giterator.Options>,
+): Giterator.Options {
   const o = options;
   return {
     tokenNames: o.tokenNames || getAllTokenNames(),

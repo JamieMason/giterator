@@ -1,6 +1,6 @@
-import type { Giterator } from '../..';
-import { createTask } from './create-task';
-import { parseOutput } from './parse-output';
+import type { Giterator } from '../../index.js';
+import { createTask } from './create-task.js';
+import { parseOutput } from './parse-output.js';
 
 export function getNextCommits(
   directory: string,

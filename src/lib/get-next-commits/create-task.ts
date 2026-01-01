@@ -1,7 +1,7 @@
 import type { ChildProcessWithoutNullStreams } from 'child_process';
 import { spawn } from 'child_process';
-import type { Giterator } from '../..';
-import { tokensByName } from '../tokens-by-name';
+import type { Giterator } from '../../index.js';
+import { tokensByName } from '../tokens-by-name.js';
 
 export function createTask(
   directory: string,
@@ -10,7 +10,8 @@ export function createTask(
 ): ChildProcessWithoutNullStreams {
   const skipAmount = pageNumber <= 1 ? 0 : pageSize * (pageNumber - 1);
   const nodes = tokenNames.map(
-    (tokenName) => `<${tokenName}>${tokensByName[tokenName]}</${tokenName}>`,
+    (tokenName: Giterator.TokenName) =>
+      `<${tokenName}>${tokensByName[tokenName]}</${tokenName}>`,
   );
   return spawn(
     'git',

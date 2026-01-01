@@ -1,5 +1,5 @@
-import type { Giterator } from '../..';
-import { parseLine } from './parse-line';
+import type { Giterator } from '../../index.js';
+import { parseLine } from './parse-line.js';
 
 export function parseOutput(
   output: string,
