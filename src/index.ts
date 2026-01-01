@@ -61,7 +61,7 @@ export namespace Giterator {
 
 export async function* giterator(
   directory: string,
-  options: Partial<Giterator.Options>,
+  options?: Partial<Giterator.Options>,
 ) {
   let pageNumber = 1;
   const config = getConfig(options);
