@@ -11,11 +11,6 @@
     "@tsconfig/node14": "1.0.3",
     "@types/jest": "29.4.0",
     "@types/node": "14.18.36",
-    "@typescript-eslint/eslint-plugin": "5.53.0",
-    "@typescript-eslint/parser": "5.53.0",
-    "eslint": "8.34.0",
-    "eslint-plugin-import": "2.27.5",
-    "eslint-plugin-jest": "27.2.1",
     "expect-more-jest": "5.5.0",
     "jest": "29.4.3",
     "prettier": "2.8.4",
@@ -40,11 +35,8 @@
   "repository": "JamieMason/giterator",
   "scripts": {
     "build": "rm -rf ./dist && tsc --project .",
-    "format": "pnpm run format:lint && pnpm run format:source",
-    "format:lint": "pnpm run lint --fix",
-    "format:source": "prettier --write .",
-    "lint": "eslint --ext .ts .",
-    "prepack": "yarn build",
+    "format": "prettier --write .",
+    "prepack": "pnpm run build",
     "test": "jest src"
   }
 }
