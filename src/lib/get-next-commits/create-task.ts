@@ -1,12 +1,11 @@
-import type { ChildProcessWithoutNullStreams } from 'child_process';
-import { spawn } from 'child_process';
+import type { ChildProcessWithoutNullStreams } from 'node:child_process';
 import type { Giterator } from '../../index.js';
 import { tokensByName } from '../tokens-by-name.js';
 
 export function createTask(
   directory: string,
   pageNumber: number,
-  { tokenNames, pageSize, skipMerges }: Giterator.Options,
+  { tokenNames, pageSize, skipMerges, spawn }: Giterator.InternalOptions,
 ): ChildProcessWithoutNullStreams {
   const skipAmount = pageNumber <= 1 ? 0 : pageSize * (pageNumber - 1);
   const nodes = tokenNames.map(

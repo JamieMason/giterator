@@ -5,7 +5,7 @@ import { parseOutput } from './parse-output.js';
 export function getNextCommits(
   directory: string,
   pageNumber: number,
-  options: Giterator.Options,
+  options: Giterator.InternalOptions,
 ): Promise<Giterator.Commit[]> {
   return new Promise((resolve) => {
     let commits: Giterator.Commit[] = [];

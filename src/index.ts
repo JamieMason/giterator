@@ -1,3 +1,4 @@
+import type { ChildProcessWithoutNullStreams } from 'node:child_process';
 import { getConfig } from './lib/get-config.js';
 import { getNextCommits } from './lib/get-next-commits/index.js';
 import type { tokensByName } from './lib/tokens-by-name.js';
@@ -34,6 +35,27 @@ export namespace Giterator {
      * @default true
      */
     skipMerges: boolean;
+    /**
+     * Optional function to spawn child processes for running git commands.
+     * If not provided, defaults to `spawn` from `node:child_process`.
+     * This is useful for testing or custom process handling.
+     */
+    spawn?: (
+      command: string,
+      args: string[],
+      options: { cwd: string },
+    ) => ChildProcessWithoutNullStreams;
+  }
+
+  /**
+   * Internal Options type with all required fields (spawn is guaranteed to be set by getConfig)
+   */
+  export interface InternalOptions extends Omit<Options, 'spawn'> {
+    spawn: (
+      command: string,
+      args: string[],
+      options: { cwd: string },
+    ) => ChildProcessWithoutNullStreams;
   }
 }
 
