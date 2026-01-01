@@ -1,0 +1,117 @@
+# Development Rules
+
+## MUST READ: When to Ask vs Proceed
+
+### Ask when
+
+- User intent unclear or multiple valid approaches
+- Breaking changes or core architecture modifications
+- Creating ANY new files not explicitly requested
+- Large refactors (ask strategy questions FIRST)
+- Architectural decisions: state machine, node types
+
+### Proceed when
+
+- Pattern clearly exists in codebase
+- Following established convention
+- Non-breaking changes
+- Adding tests, fixing obvious bugs
+
+## MUST READ: Communication Style
+
+**Signal over noise** - applies to responses, plans, docs, comments:
+
+- Extremely concise, fragments over sentences
+- Action-oriented: what to DO
+- Ground in facts: cite code/docs
+- Remove: "basically", "essentially", "in order to"
+- Use British English: "behaviour" not "behavior", "organised" not "organized", etc.
+
+## Code Style
+
+- **Functional style preferred:** pipelines over loops
+- **Descriptive names:** clarity over brevity in code
+- **Grouped imports:** External deps first, then internal
+- **Named exports:** Prefer named over default exports
+- **Type guards:** Use for runtime type narrowing
+- **Template literals:** Use for string interpolation
+
+### TDD Workflow (Mandatory)
+
+1. Write failing test, verify it fails
+2. Implement minimal code to pass
+3. Check TypeScript/ESLint
+4. Refactor
+
+### Code Quality
+
+- Functions <50 lines, modules 100-300 lines
+- Zero TypeScript errors
+- No comments by default (only for complex logic)
+- Scientific debugging: form hypotheses, test before fixing
+
+### Testing
+
+- **Test files:** Sibling `.spec.ts` files (e.g., `index.ts` → `index.spec.ts`)
+- **Framework:** Vitest with coverage
+- **Test naming:** `describe` blocks for features, `it` for specific behaviours
+
+## MUST READ: AI-Specific Rules
+
+### Pre-Implementation Checklist
+
+Before large changes:
+
+- Have I identified ALL decision points?
+- Have I listed trade-offs for each approach?
+- Have I asked user which strategy to use?
+- Am I making ANY architectural assumptions?
+- Am I creating files user didn't request?
+
+If "no" to ANY, STOP and ask.
+
+### Recognising Assumption Mode
+
+STOP if you think:
+
+- "I'll use approach X because it seems reasonable"
+- "I can refactor later if wrong"
+- "This is a minor detail"
+- "I'll create helpful documentation"
+- "I'll write a summary file"
+- "Let me document this implementation"
+
+Self-check: "Could this be done differently?" → Ask user Self-check: "Am I creating a file user
+didn't request?" → STOP
+
+### Before Making Claims
+
+1. Search codebase to verify
+2. Read actual implementation
+3. Base advice on verified facts
+
+### Before Writing Tests
+
+1. Read 2-3 existing tests in same file
+2. Identify the pattern (factories, assertion style)
+3. Match that pattern exactly
+4. Never invent APIs - only use what exists
+
+## MUST READ: Troubleshooting
+
+### Scientific debugging
+
+1. Observe error carefully
+2. Hypothesise root cause
+3. Experiment with targeted changes
+4. Validate hypothesis
+5. Fix and verify with tests
+
+## Quick Reference
+
+Before committing:
+
+- ✅ Tests pass (`pnpm test`)
+- ✅ Zero TypeScript errors (`pnpm build`)
+- ✅ Code formatted (`pnpm format`)
+- ✅ Patterns followed
